@@ -15,7 +15,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -28,8 +28,39 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- Cycle - "slideshow" plug-in -->
+	<script type="text/javascript" src="vendor/jquery.cycle.all.js"></script>
+	<!-- Run the slide show! -->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.slideshow').cycle({ 
+    		fx:     'shuffle', 
+    		easing: 'easeOutBack', 
+   			delay:  -4000 
+		});
+	});
+	</script>
+	
+	<!-- My Stuff -->
+    <link rel="shortcut icon" type="image/png" href="fav.jpg"/>
+    
+	<style type="text/css">
+	.small {
+		text-transform: lowercase !important;
+	}
+	::-moz-selection
+	{
+		background:black;
+		color:lime;
+	}
+	::selection 
+	{
+		background:black;
+		color:lime;
+	}
 
-    <link rel="favicon" href="fav.jpg">
+	</style>
 
 </head>
 
@@ -94,7 +125,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Me</h2>
-                <p>Hello I am Akhand Yaduvanshi, I am an <i class="fa fa-india"></i>Indian high school Student and an aspiring developer. To acheive my goal which is to be an expert developer, I am learning a number of languages online.The languages I'm learning include Python,Java and C<p>
+                <p>Hello I am Akhand Yaduvanshi, I am an Indian high school Student and an aspiring developer. To acheive my goal which is to be an expert developer, I am learning a number of languages online.The languages I'm learning include Python,Java and C<p>
 				<p>My current subjects are Maths, Science and Computers. I'm about to comlete my class X<sup>th</sup> and my future plan is to join IIT to and to learn about computer sciences the maximum that could be.</p>
 				<p>I am pretty familiar with HTML and CSS and my hobby is to design random websites to learn HTML and CSS , I'm also learning JS from <a href="https://freecodecamp.com">FreeCodeCamp</a>.</p>
                 <p>I am also enrolled in Harvard's CS50x at <a href="https://edx.org">eDx</a> and CS101 at <a href="https://udacity.com">Udacity</a>
@@ -108,9 +139,9 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
+                    <h2><i class="fa fa-download" ></i>Download Grayscale</h2>
                     <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg"><i class="fa fa-arrow-down"></i> Grayscale</a>
                 </div>
             </div>
         </div>
@@ -122,8 +153,12 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Social</h2>
                 <p>You can contact me using my E-mail ID or View my profiles on social media. </p>
-                <p><a href="mailto:akhandsn.com@gmail.com">akhandsn.com@gmail.com</a>
-                </p>
+                 <ul class="list-inline banner-social-buttons">
+                    <li>
+						<a href="mailto:akhandsn.com@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i><span class="network-name small"> akhandsn.com@gmail.com</span></a>
+                	</li>
+                </ul>
+                <p></p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="https://twitter.com/Akhandsnet" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -141,14 +176,19 @@
                         <a href="https://facebook.com/akhandsnet" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
 
-
                 </ul>
             </div>
         </div>
     </section>
+    
+    <div id="gallery" class="container text-center slideshow">
+		<div id="soloHTML"><a href="#"><img src="Certificates/Solo_HTML.jpg"  height="400" width="600" alt="SoloLearn HTML Certificate"/></a></div>
+		<div id="lorem"><span class="text-center">Lorem Ipsum</span></div>	
+   
+    </div>
 
-    <!-- Map Section -->
-    <div id="map"></div>
+    <!-- Map Section 
+    <div id="map"></div>-->
 
     <!-- Footer -->
     <footer>
