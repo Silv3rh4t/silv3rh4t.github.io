@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="A portfolio">
     <meta name="author" content="Akhand Yaduvanshi">
 
     <title>Akhand Yaduvanshi - Public Portfolio</title>
@@ -20,50 +20,38 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
-	<!-- JQuery -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	
-	<!-- Cycle - "slideshow" plug-in -->
-	<script type="text/javascript" src="vendor/jquery.cycle.all.js"></script>
-	<!-- Run the slide show! -->
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$("#gallery").cycle({ 
-    		fx:     'shuffle', 
-    		easing: 'easeOutBack', 
-   			delay:  -4000 
-		});
-	});
-	</script>
-	
-	<!-- My Stuff -->
-    <link rel="shortcut icon" type="image/png" href="fav.jpg"/>
-    
-	<style type="text/css">
-	.small {
-		text-transform: lowercase !important;
-	}
-	::-moz-selection
-	{
-		background:black;
-		color:lime;
-	}
-	::selection 
-	{
-		background:black;
-		color:lime;
-	}
 
-	</style>
+    <!-- JQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="fav.jpg" />
+
+    <style type="text/css">
+        .small {
+            text-transform: lowercase !important;
+        }
+        
+        ::-moz-selection {
+            background: black;
+            color: lime;
+        }
+        
+        ::selection {
+            background: black;
+            color: lime;
+        }
+    </style>
 
 </head>
 
@@ -92,7 +80,7 @@
                         <a class="page-scroll" href="#about">About Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download Template</a>
+                        <a class="page-scroll" href="#achievements">Certificates</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Social</a>
@@ -111,7 +99,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">My PortFolio</h1>
-                        <p class="intro-text">Hey, I am Akhand Yaduvanshi,a class X Student an aspiring developer Welcome to my public Portfolio</p>
+                        <p class="intro-text">Hey, I am Akhand Yaduvanshi. Welcome to my Portfolio</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -123,30 +111,27 @@
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
-    	<a href="#" title="Just a random image of me, self captured">
-    <img alt="Me" class="img-circle" src="img/Me.jpg" height="460"></a>
+        <a href="#" title="Just a random image of me, self captured">
+            <img alt="Me" class="img-circle" src="img/Me_2.jpg" height="450"></a>
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Me</h2>
-                <p>Hello I am Akhand Yaduvanshi, I am an Indian high school Student and an aspiring developer. To acheive my goal which is to be an expert developer, I am learning a number of languages online.The languages I'm learning include Python,Java and C<p>
-				<p>My current subjects are Maths, Science and Computers. I'm about to comlete my class X<sup>th</sup> and my future plan is to join IIT to and to learn about computer sciences the maximum that could be.</p>
-				<p>I am pretty familiar with HTML and CSS and my hobby is to design random websites to learn HTML and CSS , I'm also learning JS from <a href="https://freecodecamp.com">FreeCodeCamp</a>.</p>
-                <p>I am also enrolled in Harvard's CS50x at <a href="https://edx.org">eDx</a> and CS101 at <a href="https://udacity.com">Udacity</a>
+                <p>Hello I am Akhand Yaduvanshi, I am an Indian high school Student and an aspiring developer. To acheive my goal which is to be an expert developer, I am learning a number of languages online.The languages I'm learning include Python,Java
+                    and C
+                    <p>
+                        <p>I'm currently pursuing Computers and Science with Maths in class XI<sup>th</sup> and I intend to pursue these subjects at their fullest</p>
+                        <p>I try to expand my HTML and CSS skills by making random websites and custom portfolios for my friends, I'm also learning JS from <a href="https://freecodecamp.com">FreeCodeCamp</a>.</p>
+                        <p>I am also enrolled in Harvard's CS50x at <a href="https://edx.org">eDx</a> and CS101 at <a href="https://udacity.com">Udacity</a>
 
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2><i class="fa fa-download" ></i>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg"><i class="fa fa-arrow-down"></i> Grayscale</a>
-                </div>
-            </div>
+    <section id="achievements" class="content-section text-center">
+        <div id="gallery" class="container text-center">
+            <img class="img-responsive" src="Certificates/Solo_HTML.jpg" alt="SoloLearn HTML Certificate" />
+            <img class="img-responsive" src="Certificates/Solo_Java.jpg" alt="SoloLearn Java Certificate" />
         </div>
     </section>
 
@@ -155,47 +140,43 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Social</h2>
-                <p>You can contact me using my E-mail ID or View my profiles on social media. </p>
-                 <ul class="list-inline banner-social-buttons">
+                <p>Feel free to drop a mail telling me how cool or uncool you think this webpage is. Also I'd <i class="fa fa-heart"></i> to know how it can be improved</p>
+                <ul class="list-inline banner-social-buttons">
                     <li>
-						<a href="mailto:akhandsn.com@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i><span class="network-name small"> akhandsn.com@gmail.com</span></a>
-                	</li>
+                        <a href="mailto:akhandsn.com@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i><span class="network-name small"> akhandsn.com@gmail.com</span></a>
+                    </li>
                 </ul>
                 <p></p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/Akhandsnet" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/Akhandsnet" class="btn btn-tw btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/Silv3rh4t" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        <a href="https://github.com/Silv3rh4t" class="btn btn-gb btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                     </li>
-                   <!-- <li>
+                    <!-- <li>
                         <a href="https://plus.google.com/+Akhandsnet/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
                     </li> -->
-                     <li>
-                        <a href="https://akhandsnet.blogspot.com" class="btn btn-default btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">AkhandsNet</span></a>
+                    <li>
+                        <a href="https://akhandsnet.blogspot.com" class="btn btn-blog btn-lg"><i class="fa fa-book fa-fw"></i> <span class="network-name">AkhandsNet</span></a>
                     </li>
                     <li>
-                        <a href="https://facebook.com/akhandsnet" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                        <a href="https://facebook.com/akhandsnet" class="btn btn-fb btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </section>
-    
-    <div id="gallery" class="container text-center">
-		<img src="Certificates/Solo_HTML.jpg"  height="400" width="600" alt="SoloLearn HTML Certificate"/>
-		<img src="Certificates/Solo_Java.jpg" height="400" width="600" alt="SoloLearn Java Certificate"/>   
-    </div>
 
     <!-- Map Section 
     <div id="map"></div>-->
 
     <!-- Footer -->
+    <hr>
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Akhand Yaduvanshi 2017</p>
+            <p>Copyright &copy; Akhand Yaduvanshi 2017-2020</p>
         </div>
     </footer>
 
@@ -208,12 +189,8 @@
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-  <!--  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBar5v77Ny_PdKtHLe6N_mBcgNfBgVQWPU&sensor=false"></script>
--->
-    <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
-
+    
 </body>
 
 </html>
