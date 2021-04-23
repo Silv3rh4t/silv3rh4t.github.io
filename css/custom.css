@@ -63,16 +63,35 @@
   height: 100%;
 }
 
+.line{
+  width: 80%;
+  border-top: 2px solid white;
+}
+
+.zoom{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+}
+
+.transition {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .small {
-            text-transform: lowercase !important;
-        }
+    text-transform: lowercase !important;
+}
 
-        ::-moz-selection {
-            background: black;
-            color: lime;
-        }
+::-moz-selection {
+    background: black;
+    color: lime;
+}
 
-        ::selection {
-            background: black;
-            color: lime;
-        }
+::selection {
+    background: black;
+    color: lime;
+}
