@@ -5,7 +5,7 @@ setTimeout(function(){
     $(".header").animate({
         left: "+=10px",
         opacity: 1
-    },1000, function(){
+    },1500, function(){
         $(".text-intro").animate({
             left: "+=10px",
             opacity: 1
