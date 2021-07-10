@@ -94,6 +94,9 @@ hr{
     margin:5px;
     margin-top:15px;
 }
+.fa-heart{
+    color: red;
+}
 iframe{
     height:750px;
 }
