@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+.main{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(9, 5, 29);
+    color: white;
+}
+.box{
+    border: solid 2px white;
+    border-radius: 20px;
+    padding:10px;
+    padding-top:120px;
+    width:600px;
+}
+.name{
+    color: #8D2828;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.9em;
+    margin-bottom:0px;
+}
+.text-intro{
+    margin-top:-5px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.2em;
+}
+.text-detail{
+    font-family: 'Source Code Pro', monospace;
+    font-size:0.8em;  
+}
+.details{
+    margin-bottom:-10px;
+}   
+.d-icon{
+    width:25px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.fa-heart{
+    color:red;
+}
