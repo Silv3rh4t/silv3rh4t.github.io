@@ -40,8 +40,20 @@ a{
     text-decoration: none;
     color:white;
 }
-
-.project-images{
+.navnav{
+    margin-top:50px;
+}
+.nav-item{
+    color: grey;
+    cursor: pointer;
+    size:1rem;
+    margin-right:10px;
+}
+.nav-item.active{
+    color:white;
+    size:1.3rem;
+}
+.content{
     margin-top:50px;
 }
 .pro-img-wrapper{
@@ -92,6 +104,29 @@ a{
     transition: all 0.2s;
 }
 
+.article-title{
+    font-size:3rem;
+    color:rgb(177, 176, 176);
+}
+.article-title:hover{
+    font-size:3.5rem;
+    color:rgb(236, 236, 236);
+}
+
+.intro-pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-pic{
+    height:300px;
+    border-radius: 10px;
+}
+.text-introduction{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1em;
+    text-align: justify;
+}
 
 .fa-heart{
     color:red;
