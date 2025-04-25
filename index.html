@@ -1,142 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>silv3rh4t | Landing Page</title>
+  <link rel="icon" href="img/fav.png" type="image/png">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-    <link rel="stylesheet" href="ext/font-awesome/css/font-awesome.min.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
-
-    <title>Akhand Yaduvanshi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #09051d;
+      color: #fff;
+      font-family: 'Source Code Pro', monospace;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      background: rgba(20, 20, 40, 0.92);
+      padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px 0 rgba(31,38,135,0.2);
+      border: 2px solid #fff;
+      max-width: 90vw;
+    }
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: 2px;
+      color: #8D2828;
+      text-shadow: 0 2px 0 #fff, 0 4px 0 #8D2828, 2px 2px 0 #333;
+    }
+    .links {
+      margin-bottom: 1.5rem;
+    }
+    .links a {
+      color: #00fff7;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-size: 1.1rem;
+      font-family: 'Source Code Pro', monospace;
+      letter-spacing: 1px;
+      background: #181818;
+      padding: 0.3em 0.8em;
+      border-radius: 6px;
+      border: 1.5px dashed #00fff7;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 2px 12px 0 rgba(0,255,247,0.05);
+    }
+    .links a:hover {
+      color: #09051d;
+      background: #00fff7;
+      border-color: #fff;
+    }
+    .under-construction {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 1.5rem;
+      letter-spacing: 1px;
+      font-family: 'Source Code Pro', monospace;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.2rem; }
+      .container { padding: 1.2rem 0.5rem; }
+      .links a { font-size: 0.9rem; }
+    }
+  </style>
 </head>
-
 <body>
-
-    <div class="main">
-        <div class="box">
-            <p class="name">Akhand Yaduvanshi</p>
-            <p class="text-intro">Freelance Web Developer</p>
-            <div class="row details">
-                <div class="col-6">
-                    <span class="text-detail">
-                        <a href="mailto:akhandyaduvanshi@gmail.com"><img src="img/i3.png" class="d-icon" alt="">: akhandyaduvanshi@gmail.com</a> <br>
-                        <img src="img/i2.png" class="d-icon" alt="">: silv3rh4t#1024 <br>
-                    </span>
-                </div>
-                <div class="col-6">
-                    <span class="text-detail">
-                        <a href="https://instagram.com/akhand_yaduvanshi"><img src="img/i6.png" class="d-icon" alt="">: akhand_yaduvanshi</a> <br>
-                        <a href="https://github.com/silv3rh4t"><img src="img/github.png" class="d-icon" alt="">: silv3rh4t</a>
-                    </span>
-                </div>
-            </div>
-            </p>
-        </div>
-
-        <div class="navnav">
-            <span class="nav-item active" id="nav-pro" data-content=".project-images">projects</span>
-            <span class="nav-item" id="nav-art" data-content="http://blog.akhandyaduvanshi.in">articles</span>
-            <span class="nav-item" id="nav-bio" data-content=".bio">bio</span>
-        </div>
-
-        <div class="project-images content">
-            <div class="row">
-                <div class="col-md-6 row">
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        <img src="img/projects/pro.jpg" alt="" class="project-img">
-                        <div class="project-text-wrapper">
-                            <div class="project-text">
-                                Project Reach Out
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        <img src="img/projects/todo.jpg" alt="" class="project-img">
-                    </div>
-                        
-                </div>
-                <div class="col-md-6 row">
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        <img src="img/projects/vibrant.jpg" alt="" class="project-img">
-                    </div>
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        <img src="img/projects/8ga.jpg" alt="" class="project-img">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 row">
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        <img src="img/projects/apoo.jpg" alt="" class="project-img">
-                    </div>
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        
-                    </div>
-                        
-                </div>
-                <div class="col-md-6 row">
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        
-                    </div>
-                    <div class="pro-img-wrapper col-sm-6 mb-3">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bio content">
-            <div class="row mx-2">
-                <div class="col-md-3">
-                    <div class="intro-pic-container">
-                        <img class="intro-pic" src="img/Yaduvanshi.jpg" alt="Me">
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-8">
-                    Course: BA 3rd Year Uni Of Lucknow <br>
-                    High School: 2019, City Montessori Inter College, Lucknow <br>
-                    Notable Achievements: <br>
-                    <ul>
-                        <li>1st Prize, 2021, Essay Writing Competition, Lucknow</li>
-                        <li>1st Prize, 2019, Game Dev, Game Designing Championship, Delhi</li>
-                        <li>2nd Prize, 2019, Quiz, International Computer Olympiad (COFAS), Lucknow</li>
-                    </ul>
-                    Important Roles <br>
-                    <ul>
-                        <li>Editor, Dept. Of Psychology Annual Magazine, Uni Of Lucknow</li>
-                        <li>Regional President, Lucknow, Reformers Of India(Association)</li>
-                        <li>Technical Consultant, Kiddiewink Preschools</li>
-                        <li>Founding President, Cyber Club, CMS</li>
-                    </ul>
-
-                </div>
-                
-                <div class="text-introduction py-4 px-4">
-                    <p> Akhand Yaduvanshi, is a programmer, game developer, web developer, android developer. A student
-                    of Bachelor of Arts, he fantasizes of living in a world of mathematical equations. However, he is
-                    not without linguistic skills, Akhand is the author of many half-novels and has written for 
-                    magazines regularly. He has been known to quote Alan Turing as often as he quotes the Geeta and with 
-                    the same charming smile and a sumptuous poise. Dedicated to bring a positive change through the 
-                    promotion of political literacy he has taken the mantle of President, Lucknow Committe, Reformers 
-                    of India.</p>
-                    <p class="text-right">- Ritika Singh</p>
-                </div>
-            </div>
+  <div class="container">
+    <h1>Akhand Yaduvanshi</h1>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/akhand-yaduvanshi-645338b8/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/silv3rh4t" target="_blank" rel="noopener">GitHub</a>
     </div>
-
+    <div class="under-construction">under construction</div>
+  </div>
 </body>
-<script src="js/index.js"></script>
 </html>
+
